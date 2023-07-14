@@ -19,9 +19,12 @@ section h4 {
 }
 
 section .img img {
-    width: 800px;
+    width: 60%;
     position: fixed;
+    z-index: 0;
+    top: 100px;
     right: 0;
+    overflow: hidden;
 }
 
 section .content {
@@ -36,9 +39,9 @@ section .content {
 }
 
 section .content p {
-   color: white;
-   font-size: 2.5rem;
-   font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 section .content p .highlight {
@@ -52,7 +55,7 @@ section .content #subtext {
     margin-left: 20px;
 }
 
- #subtext-container {
+#subtext-container {
     border-left: 2px solid white;
     margin: 40px 0 40px;
 }
@@ -86,4 +89,36 @@ section .content #subtext {
     margin-right: 70px;
     font-size: 2rem;
     color: gold;
+}
+
+@media (max-width: 1188px) {
+    .back-text {
+        font-size: 6rem;
+    }
+
+    section .content p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 864px) {
+    .img {
+        display: none;
+    }
+
+    .back-text {
+        font-size: 4rem;
+    }
+
+    section .content p {
+        font-size: 2rem;
+    }
+
+    section .content {
+        width: 100%;
+    }
+
+    .icons a {
+        margin-right: 30px;
+    }
 }
